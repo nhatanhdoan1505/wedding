@@ -1,0 +1,17 @@
+.Paragraph{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    font-family: inherit;
+    color: black;
+    letter-spacing: 3px;
+}
+
+.Paragraph p{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

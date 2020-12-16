@@ -1,0 +1,77 @@
+.GetMarried{
+    display: flex;
+    font-family: inherit;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    animation-name: fadeInUp;
+    animation-duration: 1.5s;
+}
+
+.p{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 200;
+    letter-spacing: 8px;
+}
+
+@keyframes fadeInUp{
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 601px){
+    .p{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 200;
+    letter-spacing: 8px;
+    }
+
+}
+
+@media (max-width:400px){
+    .p{
+        text-align: center;
+        font-size: 0.8rem;
+        font-weight: 200;
+        letter-spacing: 8px;
+    }
+}
+
+@media (max-height: 400px){
+    .p{
+        text-align: center;
+        font-size: 0.7rem;
+        font-weight: 200;
+        letter-spacing: 8px;
+    }
+    .GetMarried{
+        bottom: 20px;
+    }
+}
+
+@media(max-width: 300px){
+    .p{
+        text-align: center;
+        font-size: 0.6rem;
+        font-weight: 200;
+        letter-spacing: 8px;
+    }
+}

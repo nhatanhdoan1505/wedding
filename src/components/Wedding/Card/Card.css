@@ -1,0 +1,38 @@
+.Card{
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.CardIconTitle{
+    font-size: 4rem;
+}
+
+.Card h5 {
+    font-family: inherit;
+    letter-spacing: 3px;
+    margin-top: 25px;
+    color: #f0394d;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.Card h4 {
+    font-family: 'Dancing Script', cursive;
+    margin: 30px 0px;
+    text-align: center;
+}
+
+.CardIconLocation{
+    font-size: 1rem;
+    margin: 20px 0px;
+}
+
+.Card p {
+    font-family: inherit;
+    letter-spacing: 2px;
+    text-align: center;
+}

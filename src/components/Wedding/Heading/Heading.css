@@ -1,0 +1,55 @@
+.Heading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.HeadingContainer{
+    display: flex;
+}
+
+.HeadingContainer h1 {
+    font-family: 'Dancing Script', cursive;
+    display: flex;
+    align-items: center;
+    letter-spacing: 4px;
+    font-size: 4rem;
+    margin: 0px 20px;
+    text-align: center;
+}
+
+.HeadingIcon{
+    font-size: 2rem;
+    display: flex;
+    align-items:flex-end;
+}
+
+@media (max-width: 400px){
+    .HeadingContainer h1{
+        font-size: 1.5rem;
+    }
+    .HeadingIcon{
+        align-items: center;
+    }
+}
+
+@media (max-width: 300px){
+    .HeadingContainer h1{
+        font-size: 1rem;
+    }
+    .HeadingIcon{
+        align-items: center;
+    }
+}
+
+@media (max-width: 601px){
+    .HeadingContainer h1{
+        font-size: 2rem;
+    }
+    .HeadingIcon{
+        align-items: center;
+    }
+}
+

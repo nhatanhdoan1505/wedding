@@ -1,0 +1,14 @@
+.CountDown{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    margin-top: auto;
+}
+
+@media(max-width: 1024px){
+    .CountDown{
+        width: 100%;
+    }
+}

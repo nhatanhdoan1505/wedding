@@ -1,0 +1,56 @@
+.Name{
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+    animation-name: fadeInLeft;
+    animation-duration: 1.5s;
+    color: white;
+    letter-spacing: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Name h1{
+    text-align: center;
+    font-size: 5rem;
+}
+
+@keyframes fadeInLeft{
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-20px);
+        -ms-transform: translateX(-20px);
+        transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 601px){
+    .Name h1{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 400px){
+    .Name h1{
+        font-size: 2rem;
+    }
+}
+
+@media (max-height: 400px){
+    .Name h1{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 300px){
+    .Name h1{
+        font-size: 1.5rem;
+    }
+}
