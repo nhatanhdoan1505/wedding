@@ -1,0 +1,126 @@
+
+.Clock {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #28df99;
+    font-family: inherit;
+    color: #663f3f;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: transparent;
+    text-align: center;
+    animation-name: bouceInUp;
+    animation-duration: 1.5s;
+}
+
+.CountDownValue h3{
+    font-size: 3rem;
+    font-family: inherit;
+    margin: 0;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+.CountDownItem h3{
+    margin: 0;
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+@keyframes bouceInUp{
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(2000px);
+        -ms-transform: translateY(2000px);
+        transform: translateY(2000px);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+
+    80% {
+        -webkit-transform: translateY(10px);
+        -ms-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 700px){
+    .Clock{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+    .CountDownValue h3{
+        font-size: 2rem;
+
+    }
+    .CountDownItem h3{
+        font-size: 1rem;
+        font-weight: 100;
+    }
+}
+
+@media (max-width: 600px){
+    .Clock{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
+    .CountDownValue h3{
+        font-size: 1rem;
+
+    }
+    .CountDownItem h3{
+        font-size: 0.8rem;
+        font-weight: 200;
+    }
+}
+
+@media (max-width:350px){
+    .Clock{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    .CountDownValue h3{
+        font-size: 1rem;
+
+    }
+    .CountDownItem h3{
+        font-size: 0.8rem;
+        font-weight: 200;
+    }   
+}
+
+@media (max-width: 300px){
+    .Clock{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+    .CountDownValue h3{
+        font-size: 0.5rem;
+
+    }
+    .CountDownItem h3{
+        font-size: 0.5rem;
+        font-weight: 200;
+    }
+}

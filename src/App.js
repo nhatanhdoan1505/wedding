@@ -1,19 +1,38 @@
 import './App.css';
-import React from 'react';
+import React, {useState} from 'react';
 import Aux from './hoc/Axu';
-import Home from './components/Home/Home';
-import Couple from './components/Couple/Couple';
-import Gallery from './components/Gallery/Gallery';
-import Wedding from './components/Wedding/Wedding';
+import Invitation from './components/Invitation/Invitation';
+import { Router, Route, Switch } from 'react-router-dom';
+import history from './history/history';
+import MetaDecorator from './components/MetaDecorator/MetaDecorator';
 
 function App() {
+  const [songs] = useState([
+    {
+      src: "./music/song_1.mp3"
+    },
+    {
+      src: "./music/song_2.mp3"
+    },
+    {
+      src: "./music/song_3.mp3"
+    },
+    {
+      src: "./music/song_4.mp3"
+    }
+  ]);
+
+
+
   return (  
-    <Aux>
-        <Home/>
-        <Couple/>
-        <Wedding/>
-        <Gallery/>
-    </Aux>
+    <div className="App">
+      <Router history={history}>
+        <Switch>
+          <Route path="/:id" component={Invitation}/>
+        </Switch>
+      </Router>
+    </div>
+    
   );
 }
 

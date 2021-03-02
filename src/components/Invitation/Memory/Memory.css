@@ -1,0 +1,53 @@
+.Memory{
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+    padding: 0px 15px;
+    height: 915px;
+    padding-bottom: 15px;
+    margin-bottom: 2vh;
+    display: block;
+    position: relative;
+}
+
+@media (max-width: 1288px){
+    .Memory{
+        height: 1105px;
+    }
+}
+
+@media (max-width: 1248px){
+    .Memory{
+        height: 1290px;
+    }
+}
+
+@media (max-width: 903px){
+    .Memory{
+        height: 1660px;
+    }
+}
+
+@media (max-width: 640px){
+    .Memory{
+        height: 1835px;
+    }
+}
+
+@media (max-width: 575px){
+    .Memory{
+        height: 2385px;
+    }
+}
+
+@media (max-width: 360px){
+    .Memory{
+        height: 3130px;
+    }
+}
+
+@media (max-width: 305px){
+    .Memory{
+        height: 4415px;
+    }
+}

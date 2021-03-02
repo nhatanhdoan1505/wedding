@@ -1,0 +1,77 @@
+.CardGrom{
+    display: flex;
+    flex-direction: column;
+    padding: 25px 20px;
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: inherit;
+    z-index: 2;
+    border-radius: 8px;
+
+    /* animation: fadeInLeft 2s; */
+}
+
+.CardGromImg{
+    width: 250px;
+    height: 250px;
+    background-image: url('../../../../../assets/images/grom.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.CardGromPosition{
+    font-weight: 300;
+    font-size: 1.3rem;
+    letter-spacing: 5px;
+    z-index: 2;
+}
+
+.CardGromName{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    font-weight: 200;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.CardGromScripts{
+    text-align: center;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-20px);
+        -ms-transform: translateX(-20px);
+        transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 400px){
+    .CardGromImg{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+
+@media (max-width: 300px){
+    .CardGromImg{
+        width: 150px;
+        height: 150px;
+    }
+}

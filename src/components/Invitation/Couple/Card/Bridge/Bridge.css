@@ -1,0 +1,75 @@
+.CardBridge{
+    display: flex;
+    flex-direction: column;
+    padding: 25px 20px;
+    margin: 30px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: inherit;
+    z-index: 2;
+    /* animation: fadeInRight 2s;
+    animation-delay: 2s; */
+}
+
+.CardBridgeImg{
+    width: 250px;
+    height: 250px;
+    background-image: url(../../../../../assets//images/bridge.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.CardBridgePosition{
+    font-weight: 300;
+    font-size: 1.3rem;
+    letter-spacing: 5px;
+    z-index: 2;
+}
+
+.CardBridgeName{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    font-weight: 200;
+    letter-spacing: 4px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.CardBridgeScripts{
+    text-align: center;
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(20px);
+        transform: translateX(20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 400px){
+    .CardBridgeImg{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+
+@media (max-width: 300px){
+    .CardBridgeImg{
+        width: 150px;
+        height: 150px;
+    }
+}
